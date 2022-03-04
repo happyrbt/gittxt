@@ -1,0 +1,8 @@
+----------
+介绍常用npm指令
+node -v //查看node版本
+npm -v //查看npm版本
+npm config set prefix "E:\KF\nodejs\node_global"
+npm config set cache "E:\KF\nodejs\node_cache" //设置下载器的缓存与下载存储位置
+npm install xxx -g //-g指全局变量
+xxx可为 express、webpack

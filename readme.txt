@@ -35,4 +35,5 @@ OpenSSL SSL_read: Connection was reset, errno 10054
 一些错误修复：
 git config http.postBuffer 524288000 //见https://blog.51cto.com/u_15326986/3328947
 git config --global http.sslVerify "false"
+
 */

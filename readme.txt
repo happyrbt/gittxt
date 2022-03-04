@@ -22,3 +22,11 @@ git reset --mixed HEAD //回退至上一个版本，返回至刚修改完文件�
 git reset --soft HEAD//回退至未commit的时候
 git reset --hard id;可直接回退到指定id的版本
 git revert id;提交一个新的commit作为撤销动作
+/* 以下为因切换代理而无法与连接github时的操作：取消代理
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+*/
+/* 远程管理操作
+git remote add origin github.com/xxx/filinamexxx //关联本地res
+git push -u origin master //第一次推送master分支的所有内容
+git pull//push origin master //同步

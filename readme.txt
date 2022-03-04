@@ -30,3 +30,9 @@ git config --global --unset https.proxy
 git remote add origin github.com/xxx/filinamexxx //关联本地res
 git push -u origin master //第一次推送master分支的所有内容
 git pull//push origin master //同步
+/*fatal: unable to access 'https://github.com/happyrbt/gittxt.git/': 
+OpenSSL SSL_read: Connection was reset, errno 10054
+一些错误修复：
+git config http.postBuffer 524288000 //见https://blog.51cto.com/u_15326986/3328947
+git config --global http.sslVerify "false"
+*/
